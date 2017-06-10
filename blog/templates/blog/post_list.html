@@ -6,11 +6,14 @@
     <div>
         <a href="http://klara.pythonanywhere.com/">blog</a>
     </div>
+    
     <div>
-        <h1> salalalala
-        </h1>
-        <h2> hihihi
-        </h2>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
     </div>
     <div>
         <p>hűha</p>
